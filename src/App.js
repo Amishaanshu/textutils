@@ -35,17 +35,16 @@ function App() {
   }
 
   return (
-    <>
-    
+  
     <BrowserRouter>
     <Navbar title="WordPlay" aboutText='About Us' mode={mode} toggleMode={toggleMode} content={content}/>
     <Alert alert={alert}/>
        <Routes>
-       <Route path='/Home' element={<TextForm heading="WordPLAY" mode={mode} showAlert={showAlert}/>}></Route>
+       <Route path='/' element={<TextForm heading="WordPLAY" mode={mode} showAlert={showAlert}/>}></Route>
         <Route path='/About' element={<About />}></Route>
        </Routes>
        </BrowserRouter>
-    </>
+    
   );
 }
 
